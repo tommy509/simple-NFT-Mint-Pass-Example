@@ -1,6 +1,6 @@
-# BIMAH CONTRACTS
+# Simple MintPass CONTRACT
 
-_This project is about the creation of the smart contracts behind BIMAH NFTs_
+_This project is an example of mint pass nft smart contract + a nodejs user interface. It is a simple erc721 implementation with timelocks, banned users,  roles and categories(silver, platinum, gold mint passes). Built with solidity this contract consumes chainlink feeds to bring offchain data like ush/eth price on chain. This also allow us to sell mint passes using actual prices_
 
 ### Requirements 📋
 
@@ -47,7 +47,7 @@ _To deploy compiled contracts please enter commands below_
 _In that case, deployment is beeing done to ropsten testnet_
 
 ```
-npx hardhat --network ropsten run scripts/deploy.js
+npx hardhat run scripts/deploy.js --network ropsten 
 ```
 
 ## Made with 🛠️
@@ -73,8 +73,7 @@ _Tools used to create this project_
 _People who participated in this project development from day one_
 
 * **Tommy Theodore** - *Initial work* - [tommy509](https://github.com/tommy509)
-* **Marco Aguila** - *collaborator* - [maguila18](https://github.com/maguila18)
-* **Xavier Escamilla** - *collaborator* - [xavy115](https://github.com/tommy509)
+
 
 
 ## Licence 📄
