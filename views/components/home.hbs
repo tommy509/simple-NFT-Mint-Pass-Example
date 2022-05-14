@@ -1,0 +1,282 @@
+    <main class="mt-18">
+      <!-- Item -->
+      <section class="relative pt-12 pb-24 lg:py-24">
+        <picture class="pointer-events-none absolute inset-0 -z-10 dark:hidden">
+          <img src="img/gradient_light.jpg" alt="gradient" class="h-full" />
+        </picture>
+        <div class="container">
+          <!-- Item -->
+          <div class="md:flex md:flex-wrap">
+            <!-- Image -->
+            <figure class="mb-8 md:w-2/5 md:flex-shrink-0 md:flex-grow-0 md:basis-auto lg:w-1/2">
+                <video  class="cursor-pointer rounded-[1.25rem]" autoplay muted>
+                    <source src="video/original.mp4" type="video/mp4">
+                    <source src="video/original.ogg" type="video/ogg">
+                     Your browser does not support the video tag.
+                     </video>
+              
+            </figure>
+
+            <!-- Details -->
+            <div class="md:w-3/5 md:basis-auto md:pl-8 lg:w-1/2 lg:pl-[3.75rem]">
+              <h1 class="font-display text-jacarta-700 mb-4 text-4xl font-semibold dark:text-white">Simple Mint Pass</h1>
+              <span class="text-jacarta-400 text-sm font-bold">Minted Passes</span>
+  <!-- Offers -->
+  <div class="tab-pane fade show active" id="offers" role="tabpanel" aria-labelledby="offers-tab">
+    <div
+      role="table"
+      class="scrollbar-custom dark:bg-jacarta-700 dark:border-jacarta-600 border-jacarta-100 grid max-h-72 w-full grid-cols-5 overflow-y-auto rounded-lg rounded-tl-none border bg-white text-sm dark:text-white"
+    >
+      <div class="contents" role="row">
+        <div class="dark:bg-jacarta-600 bg-light-base sticky top-0 py-2 px-4" role="columnheader">
+          <span class="text-jacarta-700 dark:text-jacarta-100 w-full overflow-hidden text-ellipsis"
+            >Id</span
+          >
+        </div>
+        <div class="dark:bg-jacarta-600 bg-light-base sticky top-0 py-2 px-4" role="columnheader">
+          <span class="text-jacarta-700 dark:text-jacarta-100 w-full overflow-hidden text-ellipsis"
+            >Price</span
+          >
+        </div>
+        <div class="dark:bg-jacarta-600 bg-light-base sticky top-0 py-2 px-4" role="columnheader">
+            <span class="text-jacarta-700 dark:text-jacarta-100 w-full overflow-hidden text-ellipsis"
+              >USD Price</span
+            >
+          </div>
+        <div class="dark:bg-jacarta-600 bg-light-base sticky top-0 py-2 px-4" role="columnheader">
+          <span class="text-jacarta-700 dark:text-jacarta-100 w-full overflow-hidden text-ellipsis"
+            >Category</span
+          >
+        </div>
+        <div class="dark:bg-jacarta-600 bg-light-base sticky top-0 py-2 px-4" role="columnheader">
+          <span class="text-jacarta-700 dark:text-jacarta-100 w-full overflow-hidden text-ellipsis"
+            >Owner</span
+          >
+        </div>
+      </div>
+
+      
+      <div class="contents" role="row">
+        <div
+          class="dark:border-jacarta-600 border-jacarta-100 flex items-center whitespace-nowrap border-t py-4 px-4"
+          role="cell"
+        >
+          <span class="-ml-1" data-tippy-content="ETH">
+            <svg
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              x="0"
+              y="0"
+              viewBox="0 0 1920 1920"
+              xml:space="preserve"
+              class="mr-1 h-4 w-4"
+            >
+              <path fill="#8A92B2" d="M959.8 80.7L420.1 976.3 959.8 731z"></path>
+              <path
+                fill="#62688F"
+                d="M959.8 731L420.1 976.3l539.7 319.1zm539.8 245.3L959.8 80.7V731z"
+              ></path>
+              <path fill="#454A75" d="M959.8 1295.4l539.8-319.1L959.8 731z"></path>
+              <path fill="#8A92B2" d="M420.1 1078.7l539.7 760.6v-441.7z"></path>
+              <path fill="#62688F" d="M959.8 1397.6v441.7l540.1-760.6z"></path>
+            </svg>
+          </span>
+          <span class="text-green text-sm font-medium tracking-tight">4.7 ETH</span>
+        </div>
+        <div
+          class="dark:border-jacarta-600 border-jacarta-100 flex items-center border-t py-4 px-4"
+          role="cell"
+        >
+          $13,966.64
+        </div>
+        <div
+          class="dark:border-jacarta-600 border-jacarta-100 flex items-center border-t py-4 px-4"
+          role="cell"
+        >
+          40% above
+        </div>
+        <div
+        class="dark:border-jacarta-600 border-jacarta-100 flex items-center border-t py-4 px-4"
+        role="cell"
+      >
+        40% above
+      </div>
+      <div
+      class="dark:border-jacarta-600 border-jacarta-100 flex items-center border-t py-4 px-4"
+      role="cell"
+    >
+      40% above
+    </div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+  <div class="container mt-24">
+    <div class="text-center mb-4">
+        <h2 class="font-display text-jacarta-700 mb-2 text-4xl font-medium dark:text-white">Silver Mint Pass</h2>
+     
+        <div class="dark:bg-jacarta-800 dark:border-jacarta-600 border-jacarta-100 mb-8 inline-flex flex-wrap items-center justify-center rounded-xl border bg-white">
+          <a href="#" class="dark:border-jacarta-600 border-jacarta-100 w-1/2 rounded-l-xl border-r py-4 hover:shadow-md sm:w-32">
+            <div class="text-jacarta-700 mb-1 text-base font-bold dark:text-white">{{data.silverMints}}</div>
+            <div class="text-2xs dark:text-jacarta-400 font-medium tracking-tight">Minted Passes of {{data.limit}}</div>
+          </a>
+          <a href="#" class="dark:border-jacarta-600 border-jacarta-100 w-1/2 py-4 hover:shadow-md sm:w-32 sm:border-r">
+            <div class="text-jacarta-700 mb-1 text-base font-bold dark:text-white">{{data.silverUSDPrice}}</div>
+            <div class="text-2xs dark:text-jacarta-400 font-medium tracking-tight">USD Price</div>
+          </a>
+          <a href="#" class="dark:border-jacarta-600 border-jacarta-100 w-1/2 border-r py-4 hover:shadow-md sm:w-32">
+            <div class="text-jacarta-700 mb-1 flex items-center justify-center text-base font-medium dark:text-white">
+              <span class="-mt-px inline-block" data-tippy-content="ETH">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 1920 1920" xml:space="preserve" class="h-4 w-4">
+                  <path fill="#8A92B2" d="M959.8 80.7L420.1 976.3 959.8 731z"></path>
+                  <path fill="#62688F" d="M959.8 731L420.1 976.3l539.7 319.1zm539.8 245.3L959.8 80.7V731z"></path>
+                  <path fill="#454A75" d="M959.8 1295.4l539.8-319.1L959.8 731z"></path>
+                  <path fill="#8A92B2" d="M420.1 1078.7l539.7 760.6v-441.7z"></path>
+                  <path fill="#62688F" d="M959.8 1397.6v441.7l540.1-760.6z"></path>
+                </svg>
+              </span>
+              <span class="font-bold">{{data.silverPrice}}</span>
+            </div>
+            <div class="text-2xs dark:text-jacarta-400 font-medium tracking-tight"> Price</div>
+          </a>
+          <a href="#" class="border-jacarta-100 w-1/2 rounded-r-xl py-4 hover:shadow-md sm:w-32">
+            <div class="text-jacarta-700 mb-1 flex items-center justify-center text-base font-medium dark:text-white">
+              <span class="-mt-px inline-block" data-tippy-content="ETH">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 1920 1920" xml:space="preserve" class="h-4 w-4">
+                  <path fill="#8A92B2" d="M959.8 80.7L420.1 976.3 959.8 731z"></path>
+                  <path fill="#62688F" d="M959.8 731L420.1 976.3l539.7 319.1zm539.8 245.3L959.8 80.7V731z"></path>
+                  <path fill="#454A75" d="M959.8 1295.4l539.8-319.1L959.8 731z"></path>
+                  <path fill="#8A92B2" d="M420.1 1078.7l539.7 760.6v-441.7z"></path>
+                  <path fill="#62688F" d="M959.8 1397.6v441.7l540.1-760.6z"></path>
+                </svg>
+              </span>
+              <span class="font-bold">{{data.silverTraded}}</span>
+            </div>
+            <div class="text-2xs dark:text-jacarta-400 font-medium tracking-tight">Volume Traded</div>
+          </a>
+        </div>
+  
+        <div class="mt-6 flex items-center justify-center space-x-2.5">
+     
+          <div class="dark:border-jacarta-600 dark:hover:bg-jacarta-600 border-jacarta-100 dropdown hover:bg-jacarta-100 dark:bg-jacarta-700 rounded-xl border bg-white">
+              <button onclick="App.buyPass({{data.silverPrice}},'{{data.contractAddress}}')" class="bg-accent-lighter cursor-default rounded-full py-3 px-8 text-center font-semibold text-white transition-all">
+                 Buy Now
+                </button>
+            </div>
+          </div>
+  
+        </div>
+        <div class="text-center mb-4 mt-24 ">
+            <h2 class="font-display text-jacarta-700 mb-2 text-4xl font-medium dark:text-white">Gold Mint Pass</h2>
+         
+            <div class="dark:bg-jacarta-800 dark:border-jacarta-600 border-jacarta-100 mb-8 inline-flex flex-wrap items-center justify-center rounded-xl border bg-white">
+              <a href="#" class="dark:border-jacarta-600 border-jacarta-100 w-1/2 rounded-l-xl border-r py-4 hover:shadow-md sm:w-32">
+                <div class="text-jacarta-700 mb-1 text-base font-bold dark:text-white">{{data.goldMints}}</div>
+                <div class="text-2xs dark:text-jacarta-400 font-medium tracking-tight">Minted Passes of {{data.limit}}</div>
+              </a>
+              <a href="#" class="dark:border-jacarta-600 border-jacarta-100 w-1/2 py-4 hover:shadow-md sm:w-32 sm:border-r">
+                <div class="text-jacarta-700 mb-1 text-base font-bold dark:text-white">{{data.goldUSDPrice}}</div>
+                <div class="text-2xs dark:text-jacarta-400 font-medium tracking-tight">USD Price</div>
+              </a>
+              <a href="#" class="dark:border-jacarta-600 border-jacarta-100 w-1/2 border-r py-4 hover:shadow-md sm:w-32">
+                <div class="text-jacarta-700 mb-1 flex items-center justify-center text-base font-medium dark:text-white">
+                  <span class="-mt-px inline-block" data-tippy-content="ETH">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 1920 1920" xml:space="preserve" class="h-4 w-4">
+                      <path fill="#8A92B2" d="M959.8 80.7L420.1 976.3 959.8 731z"></path>
+                      <path fill="#62688F" d="M959.8 731L420.1 976.3l539.7 319.1zm539.8 245.3L959.8 80.7V731z"></path>
+                      <path fill="#454A75" d="M959.8 1295.4l539.8-319.1L959.8 731z"></path>
+                      <path fill="#8A92B2" d="M420.1 1078.7l539.7 760.6v-441.7z"></path>
+                      <path fill="#62688F" d="M959.8 1397.6v441.7l540.1-760.6z"></path>
+                    </svg>
+                  </span>
+                  <span class="font-bold">{{data.goldPrice}}</span>
+                </div>
+                <div class="text-2xs dark:text-jacarta-400 font-medium tracking-tight"> Price</div>
+              </a>
+              <a href="#" class="border-jacarta-100 w-1/2 rounded-r-xl py-4 hover:shadow-md sm:w-32">
+                <div class="text-jacarta-700 mb-1 flex items-center justify-center text-base font-medium dark:text-white">
+                  <span class="-mt-px inline-block" data-tippy-content="ETH">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 1920 1920" xml:space="preserve" class="h-4 w-4">
+                      <path fill="#8A92B2" d="M959.8 80.7L420.1 976.3 959.8 731z"></path>
+                      <path fill="#62688F" d="M959.8 731L420.1 976.3l539.7 319.1zm539.8 245.3L959.8 80.7V731z"></path>
+                      <path fill="#454A75" d="M959.8 1295.4l539.8-319.1L959.8 731z"></path>
+                      <path fill="#8A92B2" d="M420.1 1078.7l539.7 760.6v-441.7z"></path>
+                      <path fill="#62688F" d="M959.8 1397.6v441.7l540.1-760.6z"></path>
+                    </svg>
+                  </span>
+                  <span class="font-bold">{{data.goldTraded}}</span>
+                </div>
+                <div class="text-2xs dark:text-jacarta-400 font-medium tracking-tight">Volume Traded</div>
+              </a>
+            </div>
+      
+            <div class="mt-6 flex items-center justify-center space-x-2.5">
+         
+              <div class="dark:border-jacarta-600 dark:hover:bg-jacarta-600 border-jacarta-100 dropdown hover:bg-jacarta-100 dark:bg-jacarta-700 rounded-xl border bg-white">
+                  <button onclick="App.buyPass({{data.goldPrice}},'{{data.contractAddress}}')" class="bg-accent-lighter cursor-default rounded-full py-3 px-8 text-center font-semibold text-white transition-all">
+                     Buy Now
+                    </button>
+                </div>
+              </div>
+      
+            </div>
+                <div class="text-center mb-4 mt-24">
+      <h2 class="font-display text-jacarta-700 mb-2 text-4xl font-medium dark:text-white">Platinum Mint Pass</h2>
+   
+      <div class="dark:bg-jacarta-800 dark:border-jacarta-600 border-jacarta-100 mb-8 inline-flex flex-wrap items-center justify-center rounded-xl border bg-white">
+        <a href="#" class="dark:border-jacarta-600 border-jacarta-100 w-1/2 rounded-l-xl border-r py-4 hover:shadow-md sm:w-32">
+          <div class="text-jacarta-700 mb-1 text-base font-bold dark:text-white">{{data.platinumMints}}</div>
+          <div class="text-2xs dark:text-jacarta-400 font-medium tracking-tight">Minted Passes of {{data.limit}}</div>
+        </a>
+        <a href="#" class="dark:border-jacarta-600 border-jacarta-100 w-1/2 py-4 hover:shadow-md sm:w-32 sm:border-r">
+          <div class="text-jacarta-700 mb-1 text-base font-bold dark:text-white">{{data.platinumUSDPrice}}</div>
+          <div class="text-2xs dark:text-jacarta-400 font-medium tracking-tight">USD Price</div>
+        </a>
+        <a href="#" class="dark:border-jacarta-600 border-jacarta-100 w-1/2 border-r py-4 hover:shadow-md sm:w-32">
+          <div class="text-jacarta-700 mb-1 flex items-center justify-center text-base font-medium dark:text-white">
+            <span class="-mt-px inline-block" data-tippy-content="ETH">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 1920 1920" xml:space="preserve" class="h-4 w-4">
+                <path fill="#8A92B2" d="M959.8 80.7L420.1 976.3 959.8 731z"></path>
+                <path fill="#62688F" d="M959.8 731L420.1 976.3l539.7 319.1zm539.8 245.3L959.8 80.7V731z"></path>
+                <path fill="#454A75" d="M959.8 1295.4l539.8-319.1L959.8 731z"></path>
+                <path fill="#8A92B2" d="M420.1 1078.7l539.7 760.6v-441.7z"></path>
+                <path fill="#62688F" d="M959.8 1397.6v441.7l540.1-760.6z"></path>
+              </svg>
+            </span>
+            <span class="font-bold">{{data.platinumPrice}}</span>
+          </div>
+          <div class="text-2xs dark:text-jacarta-400 font-medium tracking-tight"> Price</div>
+        </a>
+        <a href="#" class="border-jacarta-100 w-1/2 rounded-r-xl py-4 hover:shadow-md sm:w-32">
+          <div class="text-jacarta-700 mb-1 flex items-center justify-center text-base font-medium dark:text-white">
+            <span class="-mt-px inline-block" data-tippy-content="ETH">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 1920 1920" xml:space="preserve" class="h-4 w-4">
+                <path fill="#8A92B2" d="M959.8 80.7L420.1 976.3 959.8 731z"></path>
+                <path fill="#62688F" d="M959.8 731L420.1 976.3l539.7 319.1zm539.8 245.3L959.8 80.7V731z"></path>
+                <path fill="#454A75" d="M959.8 1295.4l539.8-319.1L959.8 731z"></path>
+                <path fill="#8A92B2" d="M420.1 1078.7l539.7 760.6v-441.7z"></path>
+                <path fill="#62688F" d="M959.8 1397.6v441.7l540.1-760.6z"></path>
+              </svg>
+            </span>
+            <span class="font-bold">{{data.platinumTraded}}</span>
+          </div>
+          <div class="text-2xs dark:text-jacarta-400 font-medium tracking-tight">Volume Traded</div>
+        </a>
+      </div>
+
+      <div class="mt-6 flex items-center justify-center space-x-2.5">
+   
+        <div class="dark:border-jacarta-600 dark:hover:bg-jacarta-600 border-jacarta-100 dropdown hover:bg-jacarta-100 dark:bg-jacarta-700 rounded-xl border bg-white">
+            <button  onclick="App.buyPass({{data.platinumPrice}},'{{data.contractAddress}}')" class="bg-accent-lighter cursor-default rounded-full py-3 px-8 text-center font-semibold text-white transition-all">
+               Buy Now
+              </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+        </div>
+      </section>
+    </main>
