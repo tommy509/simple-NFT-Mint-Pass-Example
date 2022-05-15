@@ -6,6 +6,8 @@ _The process to  have a mintpass is only to click on buy button in the user inte
 
 _After transaction complete user will have to add the token Id to his wallet and done_
 
+_This example has been deployed on Kovan testnet at following address 0xf484a46c14e0b44bb40275727587e14d3cc4d5b6_
+
 ### Requirements 📋
 
 _NODE JS_

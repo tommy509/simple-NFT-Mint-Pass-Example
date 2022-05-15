@@ -17,7 +17,7 @@ App = {
                 web3.eth.sendTransaction({
                     from: address,
                     to: contractAddress,
-                    value:  web3.utils.toWei(String(price/100), 'ether'),
+                    value:  web3.utils.toWei(String(price), 'ether'),
                     gasLimit: 350000
                 })
                     .on('transactionHash', function (hash) {

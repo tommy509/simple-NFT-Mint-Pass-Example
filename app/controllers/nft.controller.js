@@ -26,20 +26,20 @@ exports.getPasses =   async function (req,res) {
         });
 
     await nftContract.methods.getTokenPrice(1).call((error, result) => {
-    data.silverPrice = result;
+    data.silverPrice = web3.utils.fromWei(result,'ether');
     });
 
     await nftContract.methods.categoryDetails(1).call((error, result) => {
         data.silverUSDPrice = result.price;
         });
     await nftContract.methods.getTokenPrice(2).call((error, result) => {
-    data.goldPrice = result;
+    data.goldPrice = web3.utils.fromWei(result,'ether');
     });
     await nftContract.methods.categoryDetails(2).call((error, result) => {
         data.goldUSDPrice = result.price;
         });
     await nftContract.methods.getTokenPrice(3).call((error, result) => {
-     data.platinumPrice = result;
+     data.platinumPrice = web3.utils.fromWei(result,'ether');
     });
     await nftContract.methods.categoryDetails(3).call((error, result) => {
         data.platinumUSDPrice = result.price;
@@ -52,18 +52,18 @@ exports.getPasses =   async function (req,res) {
 
 exports.getSilverPrice =   async function (req,res) {
    nftContract.methods.getTokenPrice(1).call((error, result) => {
-    res.json({price:result})
+    return web3.utils.fromWei(result,'ether');
     });
 } 
 
 exports.getGoldPrice =   async function () {
     nftContract.methods.getTokenPrice(2).call((error, result) => {
-       return result;
+        return web3.utils.fromWei(result,'ether');
      });
  } 
 
  exports.getPlatinumPrice =   async function () {
     nftContract.methods.getTokenPrice(3).call((error, result) => {
-       return result;
+       return web3.utils.fromWei(result,'ether');
      });
  } 

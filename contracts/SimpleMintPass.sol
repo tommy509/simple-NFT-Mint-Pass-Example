@@ -32,17 +32,17 @@ contract SimpleMintPass  is ERC721URIStorage{
         categoryDetails[1] = Pass({
             id: 1,
             uri: "https://gateway.pinata.cloud/ipfs/QmbjfNbUh87XjTH2pbt8EaREwWgXC5c1psAcSihrS3YyhZ",
-            price: 500
+            price: 5
         });
         categoryDetails[2] = Pass({
             id: 2,
             uri: "https://gateway.pinata.cloud/ipfs/QmaeMBVgRV67h1oL6mm2p7cNx658m3mDhz3pUbMoibxLZ1",
-            price: 1000
+            price: 10
         });
         categoryDetails[3] = Pass({
             id: 3,
             uri: "https://gateway.pinata.cloud/ipfs/QmU5XdwLkiAz3hGWBc5PLhXHjhs3hqPhLfjvajuLRJ9RP6",
-            price: 2000
+            price: 20
         });
     }
 
@@ -71,11 +71,10 @@ contract SimpleMintPass  is ERC721URIStorage{
 
 
    function getTokenPrice(uint tokenId) public view returns (uint256) {
-    int tokenUSDPrice = categoryDetails[tokenId].price*10**18;
-    int etherUSDPrice = getETHLatestPrice()*10 **8*10**18;
-    int tokenPrice = (tokenUSDPrice*10**18)/etherUSDPrice; 
-    return tokenPrice.toUint256();
-    
+    uint256 tokenUSDPrice = uint256(categoryDetails[tokenId].price*10**20);
+    uint256 etherUSDPrice = uint256(getETHLatestPrice()*10**8*10**18);
+    uint256 tokenPrice = (tokenUSDPrice*10**18)/etherUSDPrice * 1 ether;
+    return tokenPrice/10000;
     }
     
     function setUri(string memory tokenURI, uint256 tokenId)
