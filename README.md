@@ -1,4 +1,4 @@
-# Simple MintPass CONTRACT
+# Simple NFT MintPass CONTRACT Example
 
 _This project is an example of mint pass nft smart contract with a nodejs backend and a Handlebars user interface. It is a simple implementation that swap Ether for erc721 tokens  with timelocks, blacklisted users,  roles and categories(silver, platinum, gold mint passes). Built with solidity this contract consumes chainlink feeds to bring offchain data like  usd/eth  current price on chain._
 
